@@ -9,13 +9,14 @@
     <meta name="keywords" content="MinHow,MinHow's Blog">
   
   <meta name="description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.1打开 https://nodejs.org ,下载10.14.2版本的压缩包 2.默认下载到 /root/下载 路径下 ，解压:1tar -xf node-v10.14.2-linux-x64.tar.xz.xz 3.创建node和npm的软链接（为了能全局使用node/npm命令）1ln -s /root/下载/n">
+<meta name="keywords" content="hexo,gethub,域名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="笔记">
-<meta property="og:url" content="http//localhost:4000/2018/12/24/笔记/index.html">
+<meta property="og:url" content="http://localhost:4000/2018/12/24/笔记/index.html">
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.1打开 https://nodejs.org ,下载10.14.2版本的压缩包 2.默认下载到 /root/下载 路径下 ，解压:1tar -xf node-v10.14.2-linux-x64.tar.xz.xz 3.创建node和npm的软链接（为了能全局使用node/npm命令）1ln -s /root/下载/n">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-26T02:46:51.881Z">
+<meta property="og:updated_time" content="2018-12-26T07:52:03.323Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.1打开 https://nodejs.org ,下载10.14.2版本的压缩包 2.默认下载到 /root/下载 路径下 ，解压:1tar -xf node-v10.14.2-linux-x64.tar.xz.xz 3.创建node和npm的软链接（为了能全局使用node/npm命令）1ln -s /root/下载/n">
@@ -118,6 +119,15 @@
     <div class="post-title-bar">
       <ul>
           
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/笔记/">笔记</a>
+                  
+                      <a href="/categories/教程/">教程</a>
+                  
+              </li>
+          
         <li>
           <i class="fa fa-calendar"></i>  2018-12-24
         </li>
@@ -156,6 +166,32 @@
 <h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>  1:安装依赖包<br>  npm install</p>
 <p>   2：安装deploy依赖包<br>   npm install hexo-deployer-git –save</p>
 <p>   上传</p>
+<h1 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h1><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>@</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.154</td>
+</tr>
+</tbody>
+</table>
 <p><a href="http://easyicon.net/" target="_blank" rel="noopener">http://easyicon.net/</a>  找图标</p>
 <h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>hexo cleam</p>
 <h1 id="回家之后"><a href="#回家之后" class="headerlink" title="回家之后"></a>回家之后</h1><p>1.安装node<br>2.安装hexo脚手架<br>3.安装git，打开 https：//git-scm，com 下载git安装包并安装<br>4.在桌面空包区域鼠标右键选择“dit bash here”   gir init blog<br>5.进入blog cd blog<br>6.安装依赖 npm install</p>
@@ -166,10 +202,10 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月26日 10:46</p>
-        <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http//localhost:4000/2018/12/24/笔记/</a></p>
+        <p>最后更新： 2018年12月26日 15:52</p>
+        <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://localhost:4000/2018/12/24/笔记/</a></p>
         <footer>
-            <a href="http//localhost:4000">
+            <a href="http://localhost:4000">
                 <img src="/images/logo.png" alt="张三">
                 张三
             </a>
@@ -224,7 +260,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http//localhost:4000/2018/12/24/笔记/&title=《笔记》 — 我的博客&pic=http//localhost:4000images/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — 我的博客&pic=/images/my.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -234,22 +270,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http//localhost:4000/2018/12/24/笔记/&title=《笔记》 — 我的博客&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — 我的博客&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http//localhost:4000/2018/12/24/笔记/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2018/12/24/笔记/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《笔记》 — 我的博客&url=http//localhost:4000/2018/12/24/笔记/&via=http//localhost:4000" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《笔记》 — 我的博客&url=http://localhost:4000/2018/12/24/笔记/&via=http://localhost:4000" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http//localhost:4000/2018/12/24/笔记/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://localhost:4000/2018/12/24/笔记/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -259,7 +295,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http//localhost:4000/2018/12/24/笔记/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://localhost:4000/2018/12/24/笔记/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -268,6 +304,17 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/hexo/" class="color5">hexo</a>
+      
+    <a href="/tags/gethub/" class="color2">gethub</a>
+      
+    <a href="/tags/域名/" class="color3">域名</a>
+      
+  </li>
+
         </ul>
         
     </footer>
@@ -277,7 +324,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下："><span class="post-toc-text">windows环境下：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化博客项目"><span class="post-toc-text">初始化博客项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预览项目"><span class="post-toc-text">预览项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译代码"><span class="post-toc-text">编译代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回家之后"><span class="post-toc-text">回家之后</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下："><span class="post-toc-text">windows环境下：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化博客项目"><span class="post-toc-text">初始化博客项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预览项目"><span class="post-toc-text">预览项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译代码"><span class="post-toc-text">编译代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#域名绑定"><span class="post-toc-text">域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-text">域名解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回家之后"><span class="post-toc-text">回家之后</span></a></li></ol>
         </nav>
     </aside>
     
@@ -359,7 +406,7 @@
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script>
   var mihoConfig = {
-      root: "http//localhost:4000",
+      root: "http://localhost:4000",
       animate: true,
       isHome: false,
       share: true,
@@ -383,10 +430,10 @@
 <div class="sidebar-menu-box" id="sidebar-menu-box">
     <div class="sidebar-menu-box-container">
         <div id="sidebar-menu-box-categories">
-            
+            <a class="category-link" href="/categories/指令/">指令</a><a class="category-link" href="/categories/指令/语法/">语法</a><a class="category-link" href="/categories/指令/语法/钥/">钥</a><a class="category-link" href="/categories/教程/">教程</a><a class="category-link" href="/categories/教程/语法/">语法</a><a class="category-link" href="/categories/教程/语法/字体/">字体</a><a class="category-link" href="/categories/笔记/">笔记</a><a class="category-link" href="/categories/笔记/教程/">教程</a>
         </div>
         <div id="sidebar-menu-box-tags">
-            
+            <a href="/tags/gethub/" style="font-size: 10px;">gethub</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/域名/" style="font-size: 10px;">域名</a>
         </div>
     </div>
     <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
@@ -419,7 +466,7 @@
     <div class="mobile-header-tag-container">
         <span class="title">Tags</span>
         <div id="mobile-header-container-tags">
-            
+            <a href="/tags/gethub/" style="font-size: 10px;">gethub</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/域名/" style="font-size: 10px;">域名</a>
         </div>
     </div>
 </div>
